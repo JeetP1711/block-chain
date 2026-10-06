@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { ShieldAlert, Fingerprint, Link as LinkIcon, Database, HardDrive, RefreshCw } from 'lucide-react';
 
 const mockHash = (str: string) => {

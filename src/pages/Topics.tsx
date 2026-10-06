@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
 export default function Topics() {
-  const [filter, setFilter] = useState('All');
-  
   return (
     <div className="animate-fade-in space-y-8">
        <div>

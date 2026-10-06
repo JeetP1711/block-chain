@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { Network, Server, Share2, Building2, Globe2, ShieldCheck } from 'lucide-react';
+import { Network, Server, Building2, Globe2, ShieldCheck } from 'lucide-react';
 
 export default function Compare() {
   const [archTab, setArchTab] = useState<'centralized' | 'distributed' | 'decentralized'>('distributed');
-  const [typeTab, setTypeTab] = useState<'public' | 'private' | 'consortium'>('public');
 
   return (
     <div className="animate-fade-in space-y-12 pb-12 max-w-6xl mx-auto">
@@ -53,7 +52,7 @@ export default function Compare() {
               )}
               {archTab === 'decentralized' && (
                  <div className="relative w-48 h-48 animate-fade-in flex items-center justify-center">
-                    {[0, 72, 144, 216, 288].map((deg, i) => (
+                    {[0, 72, 144, 216, 288].map((deg) => (
                        <div key={deg} className={`absolute w-6 h-6 bg-cyan-400 rounded-full flex items-center justify-center`} style={{ transform: `rotate(${deg}deg) translateY(-60px)`}}>
                          <Network className="w-3 h-3 text-black" />
                        </div>
