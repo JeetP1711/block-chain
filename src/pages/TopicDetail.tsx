@@ -78,12 +78,12 @@ export default function TopicDetail() {
               Quick Check
             </h3>
             
-            {topic.questions.slice(0,1).map((q, i) => (
+            {topic.questions.slice(0,1).map((q, _i) => (
                <div key={q.id}>
                   <p className="font-medium text-lg mb-4">{q.text}</p>
                   <div className="space-y-2">
                     {q.options.map((opt, _oi) => (
-                      <button key={oi} className="w-full text-left p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors">
+                      <button key={_oi} className="w-full text-left p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors">
                         {opt}
                       </button>
                     ))}
